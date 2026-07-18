@@ -1,6 +1,6 @@
 services:
 
-  app:
+  app-3:
     build:
       context: .
       dockerfile: Dockerfile
