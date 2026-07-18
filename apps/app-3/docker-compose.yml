@@ -1,0 +1,22 @@
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: landing-scaket:v1
+
+    container_name: landing-ai-seo
+
+    restart: unless-stopped
+
+    expose:
+      - "3000"
+
+    networks:
+      - web_network
+
+networks:
+  web_network:
+    external: true
